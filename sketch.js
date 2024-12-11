@@ -134,3 +134,4 @@ function checkDown(cellNum){
   }//end if
   
   return isAlive
+}//end function
