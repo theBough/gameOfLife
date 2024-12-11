@@ -6,7 +6,7 @@ function Cell(x,y,size,col,alive){
   this.alive = alive
   
   this.display = function(){
-    fill(col)
+    fill(this.col)
     rect(this.x,this.y,this.size,this.size);
   }
 }
