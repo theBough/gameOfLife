@@ -115,7 +115,7 @@ function checkRight(cellNum){
 function checkUp(cellNum){
   let isAlive = 0
   
-  if(cellNum => numCols){
+  if(cellNum >= numCols){
     if(grid[cellNum - numCols].alive){
       isAlive++;
     }
@@ -126,8 +126,8 @@ function checkUp(cellNum){
 
 function checkDown(cellNum){
   let isAlive = 0
-  
-  if(cellNum <= (numRows = 1) * numCols){
+
+  if(cellNum < (numRows - 1) * numCols){
     if(grid[cellNum + numCols].alive){
       isAlive++;
     }
